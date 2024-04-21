@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Changing Animation</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .animated-text {
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    .animated-text span {
+      background-color: blue;
+      color: white;
+      padding: 2px 5px;
+      border-radius: 3px;
+      animation: changeText 8s infinite;
+    }
+
+    @keyframes changeText {
+      0%, 20% {
+        content: "PHP";
+      }
+      25%, 45% {
+        content: "Java";
+      }
+      50%, 70% {
+        content: "C++";
+      }
+      75%, 95% {
+        content: "JavaScript";
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2 class="animated-text">Review your code written in <span></span> using Code Sequence</h2>
+</body>
+</html>
