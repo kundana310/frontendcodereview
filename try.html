@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,7 +15,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+  <script async src="js/call.js"></script>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -54,20 +54,22 @@
         <div class="col-lg-6">
             <div class="card">
                 <div class="card-header">
-                    <a href="" class="float-end btn btn-success">Submit</a>
+                    <button id="submitButt" class="float-end btn btn-success">Submit</button>
                     <p class="float-end">&emsp;</p>
                     <a href="" class="float-end btn btn-primary">Run</a>
                     <p class="float-end">&emsp;</p>
                     <a href="" class="float-end btn btn-warning">Debug</a>
                 </div>
                 <div class="card-body">
-                    <form action="" method="post">
-                        <textarea name="" class="form-control" placeholder="Write your code here ......!" id="" cols="30" rows="20"></textarea>
-                    </form>
+                    <!-- <form action="" method="post" id="myForm"> -->
+                        <textarea name="" class="form-control" placeholder="Write your code here ......!" id="code" cols="30" rows="20"></textarea>
+                    <!-- </form> -->
                 </div>
             </div>
         </div>
-        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+          <p id="output"></p>
+        </div>
     </div>
   </div>
 
